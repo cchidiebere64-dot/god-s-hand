@@ -26,6 +26,24 @@ export default function App() {
           </button>
         </div>
       </section>
+{/* Navbar */}
+<header className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+  <nav className="max-w-7xl mx-auto flex justify-between items-center p-4">
+    <h1 className="text-xl md:text-2xl font-bold text-green-700">
+      GOD'S HAND AK Pharma
+    </h1>
+    <ul className="hidden md:flex space-x-8 text-gray-700 font-medium">
+      <li><a href="#about" className="hover:text-green-600">About</a></li>
+      <li><a href="#services" className="hover:text-green-600">Services</a></li>
+      <li><a href="#contact" className="hover:text-green-600">Contact</a></li>
+    </ul>
+    <button className="md:hidden bg-green-600 text-white px-4 py-2 rounded-lg">
+      Menu
+    </button>
+  </nav>
+</header>
+
+<div className="pt-20"></div> {/* spacer so content isn’t hidden behind navbar */}
 
       {/* About Us */}
       <section className="p-12 text-center max-w-4xl mx-auto">
