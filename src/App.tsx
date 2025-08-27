@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Phone, MapPin, Mail } from "lucide-react";
-import Navbar from "./Navbar"; // 👈 import it
+import Navbar from "./Navbar";
 
 export default function App() {
   return (
@@ -85,7 +85,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-green-700 text-white text-center p-6 flex flex-col items-center gap-3">
-        <img src="/logo.png" alt="Logo" className="w-14 h-14" />
+        <img src="/logo.png" alt="Logo" className="w-16 h-16" />
         <p>
           © {new Date().getFullYear()} GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD.
           All rights reserved.
