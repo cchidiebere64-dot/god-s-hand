@@ -12,9 +12,9 @@ export default function Navbar() {
           <img
             src="/logo.png"
             alt="God's Hand Pharma Logo"
-            className="w-12 h-12"
+            className="w-16 h-16" // bigger than before
           />
-          <h1 className="text-xl font-bold text-green-700">
+          <h1 className="text-2xl font-bold text-green-700">
             GOD'S HAND AK PHARMA
           </h1>
         </div>
@@ -46,3 +46,4 @@ export default function Navbar() {
     </header>
   );
 }
+
