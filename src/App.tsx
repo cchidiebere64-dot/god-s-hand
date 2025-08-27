@@ -1,11 +1,20 @@
 import { motion } from "framer-motion";
 import { Phone, MapPin, Mail } from "lucide-react";
 
+
+import { motion } from "framer-motion";
+import { Phone, MapPin, Mail } from "lucide-react";
+
 export default function App() {
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white p-12 text-center">
+        <img
+          src="/logo.png"
+          alt="God's Hand Pharma Logo"
+          className="mx-auto mb-4 w-24 h-24"
+        />
         <motion.h1
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -24,6 +33,7 @@ export default function App() {
           <button className="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-yellow-300">
             Contact Us
           </button>
+
         </div>
       </section>
 {/* Navbar */}
