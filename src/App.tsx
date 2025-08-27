@@ -4,24 +4,24 @@ import { Phone, MapPin, Mail } from "lucide-react";
 export default function App() {
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
-      {/* Navbar */}
-      <header className="flex justify-between items-center bg-white shadow-md px-6 py-4">
-        <div className="flex items-center gap-3">
-          <img
-            src="/logo.png"
-            alt="God's Hand Pharma Logo"
-            className="w-12 h-12"
-          />
-          <h1 className="text-xl font-bold text-green-700">
-            GOD'S HAND AK PHARMA
-          </h1>
-        </div>
-        <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <a href="#about" className="hover:text-green-600">About Us</a>
-          <a href="#services" className="hover:text-green-600">Services</a>
-          <a href="#contact" className="hover:text-green-600">Contact</a>
-        </nav>
-      </header>
+{/* Navbar */}
+<header className="sticky top-0 z-50 flex justify-between items-center bg-white shadow-md px-6 py-4">
+  <div className="flex items-center gap-3">
+    <img
+      src="/logo.png"
+      alt="God's Hand Pharma Logo"
+      className="w-12 h-12"
+    />
+    <h1 className="text-xl font-bold text-green-700">
+      GOD'S HAND AK PHARMA
+    </h1>
+  </div>
+  <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
+    <a href="#about" className="hover:text-green-600">About Us</a>
+    <a href="#services" className="hover:text-green-600">Services</a>
+    <a href="#contact" className="hover:text-green-600">Contact</a>
+  </nav>
+</header>
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white p-12 text-center">
