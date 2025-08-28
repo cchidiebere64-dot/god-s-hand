@@ -4,6 +4,16 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Variants for staggered menu items
+  const menuVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: (i: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.15, duration: 0.4 },
+    }),
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="flex justify-between items-center px-4 md:px-6 py-3">
@@ -50,7 +60,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown with Animation */}
+      {/* Mobile Dropdown with Staggered Animation */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -60,27 +70,21 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="md:hidden bg-white shadow-md flex flex-col items-center gap-4 py-6"
           >
-            <a
-              href="#about"
-              className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              About Us
-            </a>
-            <a
-              href="#services"
-              className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Services
-            </a>
-            <a
-              href="#contact"
-              className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </a>
+            {["About Us", "Services", "Contact"].map((item, i) => (
+              <motion.a
+                key={item}
+                href={`#${item.toLowerCase().replace(" ", "")}`}
+                custom={i}
+                variants={menuVariants}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+                onClick={() => setIsOpen(false)}
+              >
+                {item}
+              </motion.a>
+            ))}
           </motion.div>
         )}
       </AnimatePresence>
