@@ -1,4 +1,4 @@
-import { Phone, MapPin, Mail } from "lucide-react";
+
 import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 import { useNavigate } from "react-router-dom";
