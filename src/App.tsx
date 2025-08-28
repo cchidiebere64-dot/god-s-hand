@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import Navbar from "./Navbar";
+
 
 
 export default function App() {
