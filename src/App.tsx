@@ -169,25 +169,42 @@ export default function App() {
           </div>
         </div>
       </section>*/}
+{/* Contact Info */}
+<div>
+  <h3 className="text-md font-semibold mb-3">Contact</h3>
+  <p className="text-sm">
+    📞{" "}
+    <a
+      href="https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry."
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-yellow-300"
+    >
+      +234-802-135-4478
+    </a>
+  </p>
+  <p className="text-sm">
+    📧{" "}
+    <a
+      href="mailto:info@godshandakpharma.com"
+      className="hover:text-yellow-300"
+    >
+      info@godshandakpharma.com
+    </a>
+  </p>
+  <p className="text-sm">
+    📍{" "}
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=123+Sabon+Tasha,+Kaduna,+Nigeria"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-yellow-300"
+    >
+      123 Sabon Tasha, Kaduna, Nigeria
+    </a>
+  </p>
+</div>
 
-      {/* Contact */}
-      <section id="contact" className="p-12 text-center max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-green-700">Contact Us</h2>
-        <div className="flex flex-col gap-4 items-center text-gray-700">
-          <div className="flex items-center gap-2">
-            <Phone className="text-green-600" /> 
-            <span>+234-802-135-4478</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Mail className="text-green-600" /> 
-            <span>info@godshandakpharma.com</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="text-green-600" /> 
-            <span>123 Sabon Tasha, Kaduna, Nigeria</span>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="relative bg-green-700 text-white px-6 py-10 overflow-hidden">
