@@ -1,5 +1,4 @@
 
-import Navbar from "./Navbar";
 
 export default function Order() {
   const products = [
@@ -68,5 +67,6 @@ export default function Order() {
     </div>
   );
 }
+
 
 
