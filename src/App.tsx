@@ -153,7 +153,7 @@ export default function App() {
 {/*<Navbar />
 
       {/* Hero Section */}
-      {//* <section className="relative bg-gradient-to-r from-green-700 to-blue-700 text-white py-20 text-center overflow-hidden">
+      {/* <section className="relative bg-gradient-to-r from-green-700 to-blue-700 text-white py-20 text-center overflow-hidden">
         {/* Background Watermark Logo */}
         {/* <img
           src="/logo.png"
@@ -479,10 +479,4 @@ export default function App() {
 }
 
 
-            
-
-
-
-
-
-
+          
