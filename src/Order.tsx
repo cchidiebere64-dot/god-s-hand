@@ -1,3 +1,4 @@
+import Navbar from "../components/Navbar";
 
 
 export default function Order() {
@@ -67,6 +68,7 @@ export default function Order() {
     </div>
   );
 }
+
 
 
 
