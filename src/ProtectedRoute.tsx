@@ -1,4 +1,4 @@
-import { Navigate } from "react-router-dom";
+{/*import { Navigate } from "react-router-dom";
 import { auth } from "./firebaseConfig";
 import { useAuthState } from "react-firebase-hooks/auth";
 import type { ReactNode } from "react";
@@ -15,4 +15,5 @@ export default function ProtectedRoute({ children }: Props) {
 
   return <>{children}</>;
 }
+*/}
 
