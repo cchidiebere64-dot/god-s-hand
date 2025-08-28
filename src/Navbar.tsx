@@ -14,7 +14,8 @@ export default function Navbar() {
             alt="God's Hand Pharma Logo"
             className="w-16 h-16" // bigger than before
           />
-          <h1 className="text-lg font-medium text-green-700 tracking-wide">
+          
+            <h1 className="text-lg md:text-xl font-medium text-green-700 whitespace-nowrap">
   GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD
 </h1>
 
@@ -47,6 +48,7 @@ export default function Navbar() {
     </header>
   );
 }
+
 
 
 
