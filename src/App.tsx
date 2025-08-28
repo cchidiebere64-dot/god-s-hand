@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
-
-
 export default function App() {
   const navigate = useNavigate();
 
@@ -28,21 +26,16 @@ export default function App() {
 
         <p className="relative text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
           Your trusted partner in health and wellness across Nigeria. 
-          We deliver quality medicines, reliable healthcare products, and 
-          professional guidance to keep your family healthy.
         </p>
 
         {/* Buttons */}
         <div className="relative flex justify-center gap-4">
-          {/* Order Online navigates to /order page */}
           <button
             onClick={() => navigate("/order")}
             className="bg-white text-green-700 font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-100 transition"
           >
             Order Online
           </button>
-
-          {/* Contact Us opens WhatsApp */}
           <button
             onClick={() =>
               window.open(
@@ -57,116 +50,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* About Us */}
-      <section id="about" className="p-12 text-center max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6 text-green-700">About Us</h2>
-        <p className="text-lg leading-relaxed text-gray-700">
-          At GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD, we are dedicated to 
-          improving the health and well-being of every individual we serve. 
-          With years of experience in the healthcare industry, we ensure access 
-          to affordable, high-quality medicines and personalized healthcare 
-          services. Our commitment is built on trust, care, and excellence.
-        </p>
-      </section>
-
-      {/* Services */}
-      <section id="services" className="bg-gray-100 p-12">
-        <h2 className="text-3xl font-bold text-center mb-10 text-green-700">
-          Our Services
-        </h2>
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {/* Service 1 */}
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Prescription Refills
-            </h3>
-            <p className="text-gray-600">
-              Convenient and fast prescription refill services to ensure you 
-              never run out of essential medications.
-            </p>
-          </div>
-
-          {/* Service 2 */}
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Over-the-Counter Medications
-            </h3>
-            <p className="text-gray-600">
-              From pain relievers to wellness supplements, we stock trusted 
-              brands for your everyday healthcare needs.
-            </p>
-          </div>
-
-          {/* Service 3 */}
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Health Consultations
-            </h3>
-            <p className="text-gray-600">
-              Speak directly with our qualified pharmacists for expert guidance 
-              on safe medication use and healthy living.
-            </p>
-          </div>
-
-          {/* Service 4 - Lab */}
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Laboratory Tests
-            </h3>
-            <p className="text-gray-600">
-              We provide accurate and reliable blood tests and other essential 
-              lab services to monitor and maintain your health.
-            </p>
-          </div>
-
-          {/* Service 5 - Scanning */}
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Medical Scanning
-            </h3>
-            <p className="text-gray-600">
-              Our diagnostic scanning services help detect health conditions early, 
-              ensuring proper treatment and care.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="p-12 text-center bg-gray-50">
-        <h2 className="text-3xl font-bold mb-6 text-green-700">Contact Us</h2>
-        <p className="text-sm mb-3">
-          📞{" "}
-          <a
-            href="https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-yellow-500"
-          >
-            +234-802-135-4478
-          </a>
-        </p>
-        <p className="text-sm mb-3">
-          📧{" "}
-          <a
-            href="mailto:info@godshandakpharma.com"
-            className="hover:text-yellow-500"
-          >
-            info@godshandakpharma.com
-          </a>
-        </p>
-        <p className="text-sm">
-          📍{" "}
-          <a
-            href="https://www.google.com/maps/search/?api=1&query=123+Sabon+Tasha,+Kaduna,+Nigeria"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-yellow-500"
-          >
-            123 Sabon Tasha, Kaduna, Nigeria
-          </a>
-        </p>
-      </section>
+      {/* About, Services, Contact sections … */}
     </div>
   );
 }
