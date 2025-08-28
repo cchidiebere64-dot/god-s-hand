@@ -234,15 +234,42 @@ export default function App() {
               <li><a href="#contact" className="hover:text-yellow-300">Contact</a></li>
             </ul>
           </div>
+{/* Contact Info */}
+<div>
+  <h3 className="text-md font-semibold mb-3">Contact</h3>
+  <p className="text-sm">
+    📞{" "}
+    <a
+      href="https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry."
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-yellow-300"
+    >
+      +234-802-135-4478
+    </a>
+  </p>
+  <p className="text-sm">
+    📧{" "}
+    <a
+      href="mailto:info@godshandakpharma.com"
+      className="hover:text-yellow-300"
+    >
+      info@godshandakpharma.com
+    </a>
+  </p>
+  <p className="text-sm">
+    📍{" "}
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=123+Sabon+Tasha,+Kaduna,+Nigeria"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-yellow-300"
+    >
+      123 Sabon Tasha, Kaduna, Nigeria
+    </a>
+  </p>
+</div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-md font-semibold mb-3">Contact</h3>
-            <p className="text-sm">📞 +234-802-135-4478</p>
-            <p className="text-sm">📧 info@godshandakpharma.com</p>
-            <p className="text-sm">📍 123 Sabon Tasha, Kaduna, Nigeria</p>
-          </div>
-        </div>
 
         {/* Bottom Line */}
         <div className="relative border-t border-green-500 mt-8 pt-4 text-center text-sm text-gray-200">
