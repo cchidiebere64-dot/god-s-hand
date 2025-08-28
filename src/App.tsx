@@ -6,67 +6,6 @@ export default function App() {
 
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-700 to-blue-700 text-white py-20 text-center overflow-hidden">
-        {/* Background Watermark Logo */}
-        <img
-          src="/logo.png"
-          alt="Watermark Logo"
-          className="absolute inset-0 m-auto opacity-10 w-2/3 md:w-1/3"
-        />
-
-        <motion.h1
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="relative text-4xl md:text-6xl font-extrabold mb-6 drop-shadow-lg"
-        >
-          GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD
-        </motion.h1>
-
-        <p className="relative text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
-          Your trusted partner in health and wellness across Nigeria. 
-        </p>
-
-        {/* Buttons */}
-        <div className="relative flex justify-center gap-4">
-          <button
-            onClick={() => navigate("/order")}
-            className="bg-white text-green-700 font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-100 transition"
-          >
-            Order Online
-          </button>
-          <button
-            onClick={() =>
-              window.open(
-                "https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry.",
-                "_blank"
-              )
-            }
-            className="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-yellow-300 transition"
-          >
-            Contact Us
-          </button>
-        </div>
-      </section>
-
-      {/* About, Services, Contact sections … */}
-    </div>
-  );
-}
-
-
-
-{/*import { motion } from "framer-motion";
-import { Phone, MapPin, Mail } from "lucide-react";
-import Navbar from "./Navbar";
-import { useNavigate } from "react-router-dom";
-
-export default function App() {
-  const navigate = useNavigate();
-
-  return (
-    <div className="font-sans bg-gray-50 text-gray-800">
       
       <Navbar />
 
@@ -302,6 +241,6 @@ export default function App() {
     </div>
   );
 }
-*/}
+
 
           
