@@ -14,10 +14,11 @@ export default function Navbar() {
             alt="God's Hand Pharma Logo"
             className="w-12 h-12"
           />
-          <h1 className="text-base md:text-lg font-semibold text-green-700 leading-tight">
-            GOD'S HAND AK <br className="hidden sm:block" />
-            PHARMACEUTICAL SUPPLIES LTD
-          </h1>
+         <h1 className="text-sm md:text-lg font-semibold text-green-700 leading-tight">
+  GOD'S HAND AK <br className="hidden sm:block" />
+  PHARMACEUTICAL SUPPLIES LTD
+</h1>
+
         </div>
 
         {/* Desktop Nav */}
@@ -49,3 +50,4 @@ export default function Navbar() {
     </header>
   );
 }
+
