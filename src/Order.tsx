@@ -1,76 +1,85 @@
-// src/Order.tsx
-import { useState } from "react";
+import { motion } from "framer-motion";
 
-interface Product {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-}
-
-const products: Product[] = [
-  { id: 1, name: "Paracetamol", description: "Pain reliever and fever reducer", price: "₦500" },
-  { id: 2, name: "Vitamin C", description: "Boosts immunity and overall health", price: "₦1,200" },
-  { id: 3, name: "Antibiotics", description: "For bacterial infections", price: "₦3,500" },
-  { id: 4, name: "Blood Pressure Medicine", description: "Helps control hypertension", price: "₦2,800" },
+const products = [
+  {
+    id: 1,
+    name: "Paracetamol Tablets",
+    price: "₦1,200",
+    image: "/products/paracetamol.jpg",
+  },
+  {
+    id: 2,
+    name: "Vitamin C (1000mg)",
+    price: "₦3,500",
+    image: "/products/vitamin-c.jpg",
+  },
+  {
+    id: 3,
+    name: "Blood Pressure Monitor",
+    price: "₦18,000",
+    image: "/products/bp-monitor.jpg",
+  },
+  {
+    id: 4,
+    name: "Cough Syrup",
+    price: "₦2,800",
+    image: "/products/cough-syrup.jpg",
+  },
 ];
 
 export default function Order() {
-  const [selected, setSelected] = useState<Product[]>([]);
-
-  const toggleProduct = (product: Product) => {
-    if (selected.find((p) => p.id === product.id)) {
-      setSelected(selected.filter((p) => p.id !== product.id));
-    } else {
-      setSelected([...selected, product]);
-    }
-  };
-
-  const handleSubmit = () => {
-    const message = `Hello, I would like to order:\n\n${selected
-      .map((p) => `- ${p.name} (${p.price})`)
-      .join("\n")}`;
-
-    window.open(`https://wa.me/2348021354478?text=${encodeURIComponent(message)}`);
-  };
-
   return (
-    <div className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center text-green-700">
-        🛒 Order Online
-      </h1>
-      <p className="text-center mb-10 text-gray-600">
-        Browse our products and click to add them to your order. When ready, send directly via WhatsApp.
-      </p>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        {products.map((product) => (
-          <div
-            key={product.id}
-            className={`p-6 border rounded-2xl shadow-md cursor-pointer transition ${
-              selected.find((p) => p.id === product.id)
-                ? "border-green-600 bg-green-50"
-                : "hover:shadow-lg"
-            }`}
-            onClick={() => toggleProduct(product)}
-          >
-            <h2 className="text-xl font-semibold text-green-700">{product.name}</h2>
-            <p className="text-gray-600">{product.description}</p>
-            <p className="mt-2 font-bold">{product.price}</p>
-          </div>
-        ))}
+    <div className="min-h-screen bg-gray-50 py-12 px-6">
+      <div className="max-w-6xl mx-auto text-center mb-12">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-4xl font-bold text-green-700 mb-4"
+        >
+          Order Online
+        </motion.h1>
+        <p className="text-gray-600 text-lg">
+          Browse through our products and place your order easily via WhatsApp.
+        </p>
       </div>
 
-      {selected.length > 0 && (
-        <div className="mt-10 text-center">
-          <button
-            onClick={handleSubmit}
-            className="bg-green-600 text-white px-8 py-3 rounded-xl font-semibold shadow-md hover:bg-green-700 transition"
+      {/* Products Grid */}
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        {products.map((product) => (
+          <motion.div
+            key={product.id}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white shadow-md rounded-2xl p-6 flex flex-col items-center text-center hover:shadow-xl transition"
           >
-            ✅ Place Order via WhatsApp
-          </button>
-        </div>
-      )}
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-32 h-32 object-cover mb-4"
+            />
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              {product.name}
+            </h3>
+            <p className="text-green-700 font-bold mb-4">{product.price}</p>
+            <button
+              onClick={() =>
+                window.open(
+                  `https://wa.me/2348021354478?text=Hello!%20I%20want%20to%20order%20${encodeURIComponent(
+                    product.name
+                  )}.`,
+                  "_blank"
+                )
+              }
+              className="bg-green-600 text-white px-4 py-2 rounded-xl shadow hover:bg-green-700 transition"
+            >
+              Order via WhatsApp
+            </button>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }
+
