@@ -150,7 +150,7 @@ export default function App() {
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
       {/* Navbar */}
-      <Navbar />
+{/*<Navbar />
 
       {/* Hero Section */}
       {//* <section className="relative bg-gradient-to-r from-green-700 to-blue-700 text-white py-20 text-center overflow-hidden">
@@ -281,7 +281,7 @@ export default function App() {
           </div>
 
           {/* Contact Info */}
-          <div>
+            {/* <div>
             {/*   <h3 className="text-md font-semibold mb-3">Contact</h3>
             <p className="text-sm">📞 +234-802-135-4478</p>
             <p className="text-sm">📧 info@godshandakpharma.com</p>
