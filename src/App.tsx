@@ -71,7 +71,71 @@ export default function App() {
       </section>
 
       {/* Services */}
-      <section id="services" className="bg-gray-100 p-12">
+
+      {/* Services */}
+<section id="services" className="bg-gray-100 p-12">
+  <h2 className="text-3xl font-bold text-center mb-10 text-green-700">
+    Our Services
+  </h2>
+  <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    {/* Service 1 */}
+    <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
+      <h3 className="text-xl font-semibold mb-2 text-green-700">
+        Prescription Refills
+      </h3>
+      <p className="text-gray-600">
+        Convenient and fast prescription refill services to ensure you 
+        never run out of essential medications.
+      </p>
+    </div>
+
+    {/* Service 2 */}
+    <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
+      <h3 className="text-xl font-semibold mb-2 text-green-700">
+        Over-the-Counter Medications
+      </h3>
+      <p className="text-gray-600">
+        From pain relievers to wellness supplements, we stock trusted 
+        brands for your everyday healthcare needs.
+      </p>
+    </div>
+
+    {/* Service 3 */}
+    <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
+      <h3 className="text-xl font-semibold mb-2 text-green-700">
+        Health Consultations
+      </h3>
+      <p className="text-gray-600">
+        Speak directly with our qualified pharmacists for expert guidance 
+        on safe medication use and healthy living.
+      </p>
+    </div>
+
+    {/* NEW: Lab (Blood Test) */}
+    <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
+      <h3 className="text-xl font-semibold mb-2 text-green-700">
+        Laboratory Tests
+      </h3>
+      <p className="text-gray-600">
+        We provide accurate and reliable blood tests and other essential 
+        lab services to monitor and maintain your health.
+      </p>
+    </div>
+
+    {/* NEW: Scanning */}
+    <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
+      <h3 className="text-xl font-semibold mb-2 text-green-700">
+        Medical Scanning
+      </h3>
+      <p className="text-gray-600">
+        Our diagnostic scanning services help detect health conditions early, 
+        ensuring proper treatment and care.
+      </p>
+    </div>
+  </div>
+</section>
+
+      {/* <section id="services" className="bg-gray-100 p-12">
         <h2 className="text-3xl font-bold text-center mb-10 text-green-700">
           Our Services
         </h2>
@@ -104,7 +168,7 @@ export default function App() {
             </p>
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Contact */}
       <section id="contact" className="p-12 text-center max-w-4xl mx-auto">
