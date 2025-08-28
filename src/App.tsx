@@ -70,25 +70,7 @@ export default function App() {
             </div>
           ))}
         </div>
-      </section>
-
-      {/* Contact */}
-      <section id="contact" className="p-12 text-center max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-        <div className="flex flex-col gap-4 items-center">
-          <div className="flex items-center gap-2">
-            <Phone className="text-green-600" /> <span>+234-XXX-XXXXXXX</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Mail className="text-green-600" />{" "}
-            <span>info@godshandakpharma.com</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="text-green-600" />{" "}
-            <span>123 Main Street, Lagos, Nigeria</span>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Footer */}
       <footer className="relative bg-green-700 text-white px-6 py-10 overflow-hidden">
@@ -122,9 +104,9 @@ export default function App() {
     {/* Contact Info */}
     <div>
       <h3 className="text-md font-semibold mb-3">Contact</h3>
-      <p className="text-sm">📞 +234-XXX-XXXXXXX</p>
-      <p className="text-sm">📧 info@godshandakpharma.com</p>
-      <p className="text-sm">📍 123 Main Street, Lagos, Nigeria</p>
+      <p className="text-sm">📞 +234-8021354478</p>
+      <p className="text-sm">📧 info@Chidiebere POS Man.com</p>
+      <p className="text-sm">📍 123 Sabon Tasha, Kaduna, Nigeria</p>
     </div>
   </div>
 
