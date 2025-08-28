@@ -17,8 +17,13 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
       <div className="flex justify-between items-center px-4 md:px-6 py-3">
-        {/* Logo + Short Title */}
-        <div className="flex items-center gap-2">
+        {/* Logo + Title with fade in */}
+        <motion.div
+          initial={{ opacity: 0, x: -30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="flex items-center gap-2"
+        >
           <img
             src="/logo.png"
             alt="God's Hand Pharma Logo"
@@ -27,7 +32,7 @@ export default function Navbar() {
           <h1 className="text-base md:text-lg font-semibold text-green-700">
             GOD'S HAND AK PHARMA
           </h1>
-        </div>
+        </motion.div>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
@@ -79,7 +84,7 @@ export default function Navbar() {
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
-                className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+                className="w-40 text-center border border-green-600 text-green-700 px-4 py-2 rounded-lg font-medium hover:bg-green-600 hover:text-white transition"
                 onClick={() => setIsOpen(false)}
               >
                 {item}
