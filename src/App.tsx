@@ -25,8 +25,8 @@ export default function App() {
 
         <p className="relative text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">
           Your trusted partner in health and wellness across Nigeria. 
-          We deliver quality medicines, reliable healthcare products, and 
-          professional guidance to keep your family healthy.
+          We deliver quality medicines, reliable healthcare products, 
+          and professional guidance to keep your family healthy.
         </p>
 
         <div className="relative flex justify-center gap-4">
