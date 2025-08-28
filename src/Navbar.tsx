@@ -6,19 +6,17 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="flex justify-between items-center px-6 py-4">
-        {/* Logo + Title */}
-        <div className="flex items-center gap-3">
+      <div className="flex justify-between items-center px-4 md:px-6 py-3">
+        {/* Logo + Short Title */}
+        <div className="flex items-center gap-2">
           <img
             src="/logo.png"
             alt="God's Hand Pharma Logo"
-            className="w-16 h-16" // bigger than before
+            className="w-12 h-12 md:w-14 md:h-14"
           />
-          
-            <h1 className="text-lg md:text-xl font-medium text-green-700 whitespace-nowrap">
-  GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD
-</h1>
-
+          <h1 className="text-base md:text-lg font-semibold text-green-700">
+            GOD'S HAND AK PHARMA
+          </h1>
         </div>
 
         {/* Desktop Nav */}
@@ -48,7 +46,3 @@ export default function Navbar() {
     </header>
   );
 }
-
-
-
-
