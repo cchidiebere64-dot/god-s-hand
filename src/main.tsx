@@ -1,12 +1,17 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-import Order from "./Order";
+import Order from "./Order"; // <-- you will create this page
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="/order" element={<Order />} />
-    </Routes>
-  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/order" element={<Order />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
+
