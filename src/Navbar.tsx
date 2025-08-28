@@ -1,6 +1,4 @@
-
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
@@ -28,12 +26,27 @@ export default function Navbar() {
           <a href="#contact" className="hover:text-green-600">Contact</a>
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button with Animation */}
         <button
-          className="md:hidden text-gray-700"
+          className="md:hidden relative w-8 h-8 flex flex-col justify-between"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
+          {/* 3 bars animate into X */}
+          <motion.span
+            className="block h-1 bg-gray-800 rounded"
+            animate={isOpen ? { rotate: 45, y: 10 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.3 }}
+          />
+          <motion.span
+            className="block h-1 bg-gray-800 rounded"
+            animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+            transition={{ duration: 0.3 }}
+          />
+          <motion.span
+            className="block h-1 bg-gray-800 rounded"
+            animate={isOpen ? { rotate: -45, y: -10 } : { rotate: 0, y: 0 }}
+            transition={{ duration: 0.3 }}
+          />
         </button>
       </div>
 
