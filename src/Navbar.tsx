@@ -1,5 +1,7 @@
+
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,33 +37,40 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-md flex flex-col items-center gap-4 py-6">
-          <a
-            href="#about"
-            className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-            onClick={() => setIsOpen(false)}
+      {/* Mobile Dropdown with Animation */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="md:hidden bg-white shadow-md flex flex-col items-center gap-4 py-6"
           >
-            About Us
-          </a>
-          <a
-            href="#services"
-            className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Services
-          </a>
-          <a
-            href="#contact"
-            className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </a>
-        </div>
-      )}
+            <a
+              href="#about"
+              className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              About Us
+            </a>
+            <a
+              href="#services"
+              className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              Services
+            </a>
+            <a
+              href="#contact"
+              className="w-40 text-center bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </a>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }
-
