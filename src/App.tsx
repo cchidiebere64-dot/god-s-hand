@@ -7,29 +7,36 @@ export default function App() {
     <div className="font-sans bg-gray-50 text-gray-800">
       {/* Navbar */}
       <Navbar />
+{/* Hero Section */}
+<section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white p-12 text-center overflow-hidden">
+  {/* Background Watermark Logo */}
+  <img
+    src="/logo.png"
+    alt="Watermark Logo"
+    className="absolute inset-0 m-auto opacity-10 w-2/3 md:w-1/3"
+  />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-green-600 to-blue-600 text-white p-12 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl md:text-6xl font-bold mb-4"
-        >
-          GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD
-        </motion.h1>
-        <p className="text-lg md:text-xl mb-6">
-          Your trusted partner in health and wellness
-        </p>
-        <div className="flex justify-center gap-4">
-          <button className="bg-white text-green-700 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-gray-100">
-            Order Online
-          </button>
-          <button className="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-yellow-300">
-            Contact Us
-          </button>
-        </div>
-      </section>
+  <motion.h1
+    initial={{ opacity: 0, y: -30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.6 }}
+    className="relative text-4xl md:text-6xl font-bold mb-4"
+  >
+    GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD
+  </motion.h1>
+  <p className="relative text-lg md:text-xl mb-6">
+    Your trusted partner in health and wellness
+  </p>
+  <div className="relative flex justify-center gap-4">
+    <button className="bg-white text-green-700 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-gray-100">
+      Order Online
+    </button>
+    <button className="bg-yellow-400 text-gray-900 font-semibold px-6 py-3 rounded-2xl shadow-md hover:bg-yellow-300">
+      Contact Us
+    </button>
+  </div>
+</section>
+
 
       {/* About Us */}
       <section id="about" className="p-12 text-center max-w-4xl mx-auto">
