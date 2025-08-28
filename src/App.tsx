@@ -271,7 +271,7 @@ export default function App() {
           </div>
 
           {/* Quick Links */}
-          <div>
+        {/* <div>
             {/*  <h3 className="text-md font-semibold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li><a href="#about" className="hover:text-yellow-300">About Us</a></li>
