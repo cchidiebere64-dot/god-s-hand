@@ -1,4 +1,6 @@
 // src/main.tsx
+import React from "react";
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import App from "./App";
@@ -7,17 +9,20 @@ import Order from "./Order";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,   // ✅ Layout wraps all pages
+    element: <Layout />,
     children: [
-      { path: "/", element: <App /> },
-      { path: "/order", element: <Order /> },
+      { index: true, element: <App /> },
+      { path: "order", element: <Order /> },
     ],
   },
 ]);
 
-export default function MainApp() {
-  return <RouterProvider router={router} />;
-}
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
+);
+
 
 
 
