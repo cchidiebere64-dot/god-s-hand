@@ -70,7 +70,7 @@ export default function App() {
             </div>
           ))}
         </div>
-      
+      <section/>
 
       {/* Footer */}
       <footer className="relative bg-green-700 text-white px-6 py-10 overflow-hidden">
