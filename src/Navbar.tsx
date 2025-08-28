@@ -15,7 +15,7 @@ export default function Navbar() {
             className="w-16 h-16" // bigger than before
           />
           <h1 className="text-2xl font-bold text-green-700">
-            GOD'S HAND AK PHARMA
+            GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD
           </h1>
         </div>
 
@@ -46,4 +46,5 @@ export default function Navbar() {
     </header>
   );
 }
+
 
