@@ -36,18 +36,24 @@ export default function Navbar() {
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
+<ul>
+  <li><a href="#about">About</a></li>
+  <li><a href="#services">Services</a></li>
+  <li>
+    <a
+      href="https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry."
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-yellow-300"
+    >
+      Contact
+    </a>
+  </li>
+</ul>
 
-      {/* Mobile Dropdown */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-lg border-t border-gray-200">
-          <nav className="flex flex-col items-center gap-4 py-6 text-base font-medium text-gray-800">
-            <a href="#about" onClick={() => setIsOpen(false)}>About Us</a>
-            <a href="#services" onClick={() => setIsOpen(false)}>Services</a>
-            <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
-          </nav>
-        </div>
       )}
     </header>
   );
 }
+
 
