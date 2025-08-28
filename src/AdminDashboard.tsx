@@ -36,7 +36,7 @@ export default function AdminDashboard() {
   return (
     <div className="p-6 max-w-lg mx-auto">
       {/* Top Bar */}
-      <div className="flex justify-between items-center mb-6">
+{/*  <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold">Admin Dashboard</h2>
         <button
           onClick={handleLogout}
@@ -47,7 +47,7 @@ export default function AdminDashboard() {
       </div>
 
       {/* Add Product Form */}
-      <h3 className="text-xl font-semibold mb-4">Add New Product</h3>
+{/*   <h3 className="text-xl font-semibold mb-4">Add New Product</h3>
       <input
         type="text"
         placeholder="Product Name"
@@ -76,5 +76,6 @@ export default function AdminDashboard() {
     </div>
   );
 }*/}
+
 
 
