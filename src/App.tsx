@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div className="font-sans bg-gray-50 text-gray-800">
       {/* Navbar */}
-      <Navbar />
+      
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-green-700 to-blue-700 text-white py-20 text-center overflow-hidden">
