@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, MapPin, Mail } from "lucide-react";
+// import { Phone, MapPin, Mail } from "lucide-react";
 import Navbar from "./Navbar";
 
 export default function App() {
@@ -72,6 +72,26 @@ export default function App() {
         </div>
       </section> {/* ✅ Fixed closing tag */}
 
+        {/* Contact Section */}
+      {/*<section id="contact" className="p-12 text-center max-w-4xl mx-auto">
+  <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
+  <div className="flex flex-col gap-4 items-center">
+    <div className="flex items-center gap-2">
+      <Phone className="text-green-600" /> <span>+234-8021354478</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <Mail className="text-green-600" />{" "}
+      <span>info@ChidieberePOSMan.com</span>
+    </div>
+    <div className="flex items-center gap-2">
+      <MapPin className="text-green-600" />{" "}
+      <span>123 Sabon Tasha, Kaduna, Nigeria</span>
+    </div>
+  </div>
+</section>*/}
+
+
+      
       {/* Footer */}
       <footer className="relative bg-green-700 text-white px-6 py-10 overflow-hidden">
         {/* Background Logo */}
