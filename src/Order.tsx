@@ -1,8 +1,5 @@
 
 import { useEffect, useState } from "react";
-import { db } from "./firebaseConfig";
-import { collection, getDocs } from "firebase/firestore";
-
 import Navbar from "./Navbar";
 
 export default function Order() {
@@ -72,3 +69,4 @@ export default function Order() {
     </div>
   );
 }
+
