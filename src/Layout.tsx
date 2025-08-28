@@ -4,12 +4,14 @@ import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <div className="font-sans bg-gray-50 text-gray-800">
+    <div className="flex flex-col min-h-screen">
       {/* Navbar always visible */}
       <Navbar />
 
-      {/* Routed pages go here */}
-      <Outlet />
+      {/* Main content */}
+      <main className="flex-grow">
+        <Outlet />
+      </main>
 
       {/* Footer always visible */}
       <footer className="relative bg-green-700 text-white px-6 py-10 overflow-hidden">
