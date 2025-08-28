@@ -1,10 +1,8 @@
-// src/AdminDashboard.tsx
 import { useState } from "react";
-import { db, storage } from "./firebaseConfig";
+import { db, storage, auth } from "./firebaseConfig";
 import { addDoc, collection } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { signOut } from "firebase/auth";
-import { auth } from "./firebaseConfig";
 
 export default function AdminDashboard() {
   const [name, setName] = useState("");
@@ -30,26 +28,26 @@ export default function AdminDashboard() {
     setFile(null);
   };
 
-const handleLogout = async () => {
-  await signOut(auth);
-  window.location.href = "/admin"; // back to login page
-};
+  const handleLogout = async () => {
+    await signOut(auth);
+    window.location.href = "/admin"; // redirect to login
+  };
 
-return (
-  <div className="p-6 max-w-lg mx-auto">
-    <div className="flex justify-between items-center mb-6">
-      <h2 className="text-2xl font-bold">Add New Product</h2>
-      <button
-        onClick={handleLogout}
-        className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
-      >
-        Logout
-      </button>
-    </div>
-  
   return (
     <div className="p-6 max-w-lg mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
+      {/* Top Bar */}
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-2xl font-bold">Admin Dashboard</h2>
+        <button
+          onClick={handleLogout}
+          className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600"
+        >
+          Logout
+        </button>
+      </div>
+
+      {/* Add Product Form */}
+      <h3 className="text-xl font-semibold mb-4">Add New Product</h3>
       <input
         type="text"
         placeholder="Product Name"
