@@ -20,19 +20,19 @@ export default function Navbar() {
           </h1>
         </div>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-gray-700 font-medium">
-          <a href="#about" className="hover:text-green-600">About Us</a>
-          <a href="#services" className="hover:text-green-600">Services</a>
-          <a
-            href="https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-green-600"
-          >
-            Contact
-          </a>
-        </nav>
+  <a href="/#about" className="hover:text-green-600">About Us</a>
+  <a href="/#services" className="hover:text-green-600">Services</a>
+  <a
+    href="https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-green-600"
+  >
+    Contact
+  </a>
+</nav>
+
 
         {/* Mobile Menu Button */}
         <button
@@ -67,3 +67,4 @@ export default function Navbar() {
     </header>
   );
 }
+
