@@ -1,20 +1,24 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Order from "./Order";
-import "./index.css";
+import AdminLogin from "./AdminLogin";
+import AdminDashboard from "./AdminDashboard";
+import ProtectedRoute from "./ProtectedRoute";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<App />} />
-          <Route path="/order" element={<Order />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
-);
+const router = createBrowserRouter([
+  { path: "/", element: <App /> },
+  { path: "/order", element: <Order /> },
+  { path: "/admin", element: <AdminLogin /> },
+  {
+    path: "/dashboard",
+    element: (
+      <ProtectedRoute>
+        <AdminDashboard />
+      </ProtectedRoute>
+    ),
+  },
+]);
+
+export default function MainApp() {
+  return <RouterProvider router={router} />;
+}
