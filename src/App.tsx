@@ -135,40 +135,7 @@ export default function App() {
   </div>
 </section>
 
-      {/* <section id="services" className="bg-gray-100 p-12">
-        <h2 className="text-3xl font-bold text-center mb-10 text-green-700">
-          Our Services
-        </h2>
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Prescription Refills
-            </h3>
-            <p className="text-gray-600">
-              Convenient and fast prescription refill services to ensure you 
-              never run out of essential medications.
-            </p>
-          </div>
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Over-the-Counter Medications
-            </h3>
-            <p className="text-gray-600">
-              From pain relievers to wellness supplements, we stock trusted 
-              brands for your everyday healthcare needs.
-            </p>
-          </div>
-          <div className="shadow-md rounded-2xl p-6 text-center bg-white hover:shadow-xl transition">
-            <h3 className="text-xl font-semibold mb-2 text-green-700">
-              Health Consultations
-            </h3>
-            <p className="text-gray-600">
-              Speak directly with our qualified pharmacists for expert guidance 
-              on safe medication use and healthy living.
-            </p>
-          </div>
-        </div>
-      </section>*/}
+     
 {/* Contact Info */}
 <div>
   <h3 className="text-md font-semibold mb-3">Contact</h3>
