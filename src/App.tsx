@@ -135,26 +135,25 @@ export default function App() {
   </div>
 </section>
 
-     
-{/* Contact Info */}
-<div>
-  <h3 className="text-md font-semibold mb-3">Contact</h3>
-  <p className="text-sm">
+{/* Contact Info Section */}
+<section id="contact" className="p-12 text-center bg-gray-50">
+  <h2 className="text-3xl font-bold mb-6 text-green-700">Contact Us</h2>
+  <p className="text-sm mb-3">
     📞{" "}
     <a
       href="https://wa.me/2348021354478?text=Hello!%20I%20would%20like%20to%20make%20an%20inquiry."
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:text-yellow-300"
+      className="hover:text-yellow-500"
     >
       +234-802-135-4478
     </a>
   </p>
-  <p className="text-sm">
+  <p className="text-sm mb-3">
     📧{" "}
     <a
       href="mailto:info@godshandakpharma.com"
-      className="hover:text-yellow-300"
+      className="hover:text-yellow-500"
     >
       info@godshandakpharma.com
     </a>
@@ -165,12 +164,13 @@ export default function App() {
       href="https://www.google.com/maps/search/?api=1&query=123+Sabon+Tasha,+Kaduna,+Nigeria"
       target="_blank"
       rel="noopener noreferrer"
-      className="hover:text-yellow-300"
+      className="hover:text-yellow-500"
     >
       123 Sabon Tasha, Kaduna, Nigeria
     </a>
   </p>
-</div>
+</section>
+
 
 
       {/* Footer */}
