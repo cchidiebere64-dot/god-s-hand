@@ -1,4 +1,28 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+// src/main.tsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import App from "./App";
+import Order from "./Order";
+import "./index.css"; // ✅ ensure TailwindCSS styles load
+
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/order" element={<Order />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
+
+
+
+
+
+
+{/*import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import Order from "./Order";
 import AdminLogin from "./AdminLogin";
@@ -22,3 +46,11 @@ const router = createBrowserRouter([
 export default function MainApp() {
   return <RouterProvider router={router} />;
 }
+*/}
+
+
+
+
+
+
+  
