@@ -5,14 +5,13 @@ import Layout from "./Layout";
 import App from "./App";
 import Order from "./Order";
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        {/* All pages share the Layout */}
-        <Route path="/" element={<Layout />}>
-          <Route index element={<App />} />
-          <Route path="order" element={<Order />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<App />} />
+          <Route path="/order" element={<Order />} />
         </Route>
       </Routes>
     </BrowserRouter>
