@@ -22,7 +22,7 @@ export default function App() {
     transition={{ duration: 0.6 }}
     className="relative text-4xl md:text-6xl font-bold mb-4"
   >
-    GOD'S HAND AKPHARMACEUTICAL SUPPLIES LTD
+    GOD'S HAND AK PHARMACEUTICAL SUPPLIES LTD
   </motion.h1>
   <p className="relative text-lg md:text-xl mb-6">
     Your trusted partner in health and wellness
