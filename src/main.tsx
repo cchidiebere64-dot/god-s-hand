@@ -1,4 +1,3 @@
-// src/main.tsx
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -10,7 +9,7 @@ import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,   // ✅ Layout wraps everything
+    element: <Layout />, // ✅ Navbar + Footer wrap children
     children: [
       { index: true, element: <App /> },   // Landing page
       { path: "order", element: <Order /> } // Order page
@@ -23,4 +22,3 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-
